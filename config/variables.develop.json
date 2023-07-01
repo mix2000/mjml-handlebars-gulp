@@ -1,4 +1,9 @@
 {
   "name": "test data",
-  "mainURL": ""
+  "mainURL": "",
+  "styles": {
+    "color": {
+      "active": "#8D0808"
+    }
+  }
 }
