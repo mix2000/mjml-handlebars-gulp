@@ -12,7 +12,7 @@
     <mj-body>
         <mj-section>
             <mj-column>
-                <mj-image width="430px" padding-bottom="0" src="{{mainUrl}}/static/mail-1/Images/logo.png"></mj-image>
+                <mj-image width="430px" padding-bottom="0" src="{{mainURL}}/static/mail-1/Images/logo.png"></mj-image>
                 <mj-spacer height="40px"/>
 
                 <mj-text mj-class="header">Поставки техники

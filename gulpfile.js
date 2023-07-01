@@ -59,7 +59,7 @@ gulp.task('compile-develop', function () {
 
 /** Задача подстановки данных и компиляции test письмо. */
 gulp.task('compile-test', function () {
-    const resultVariables = {...variablesDevelop, ...variablesTest}
+    const resultVariables = {...variablesDevelop, ...variablesTest};
     return compile(resultVariables);
 });
 
@@ -93,14 +93,14 @@ gulp.task('watch', () => {
 
 
 /** Загрузка данных на сервер. */
-gulp.task('upload-to-server', () => {
+gulp.task('upload-to-server', (cb) => {
     scpClient.scp('dist', {
         "host": gulpConfig.server.host,
         "port": gulpConfig.server.port,
         "username": gulpConfig.server.username,
         "password": gulpConfig.server.password,
         "path": gulpConfig.server.path,
-    })
+    },cb)
 });
 
 /** Функция отправки на почту. */
@@ -127,7 +127,7 @@ gulp.task('mail', function () {
 });
 
 /** Задача отправки шаблона на почту. */
-gulp.task('sendEmail', gulp.task('compile-test', 'copy', 'clean', 'upload-to-server', 'mail'))
+gulp.task('send-email', gulp.series('compile-test', 'copy', 'clean', 'upload-to-server', 'mail'))
 
 /** Задача сборки шаблона. */
 // Create a build task

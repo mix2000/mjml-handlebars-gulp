@@ -6,7 +6,7 @@
   "scripts": {
     "build": "gulp build",
     "serve": "gulp serve",
-    "upl": "gulp upload-to-server"
+    "send": "gulp send-email"
   },
   "author": "",
   "license": "ISC",
