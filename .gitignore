@@ -1,2 +1,6 @@
 .idea
 node_modules
+output
+temp
+dist
+dist/*

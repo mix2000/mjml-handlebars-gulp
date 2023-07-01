@@ -1,24 +1,30 @@
 {
-  "name": "tennisi.bet",
+  "name": "your-project",
   "version": "1.0.0",
   "description": "",
-  "main": "src/index.js",
-  "type": "module",
+  "main": "index.js",
   "scripts": {
-    "start": "webpack serve --open --config webpack.config.js",
-    "build": "webpack --config webpack.config.js"
+    "build": "gulp build",
+    "serve": "gulp serve",
+    "upl": "gulp upload-to-server"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.29.3",
+    "del": "5.1.0",
+    "gulp": "^4.0.2",
+    "gulp-handlebars": "5.0.2",
+    "gulp-mail": "^0.4.2",
+    "handlebars": "^4.7.7",
+    "scp2": "^0.5.0"
   },
   "dependencies": {
-    "mjml": "^4.14.1",
-    "webpack": "^5.88.1",
-    "webpack-cli": "^5.1.4",
-    "webpack-mjml-loader": "^2.0.1"
-  },
-  "devDependencies": {
-    "copy-webpack-plugin": "^11.0.0",
-    "file-loader": "^6.2.0",
-    "html-webpack-plugin": "^5.5.3",
-    "url-loader": "^4.1.1",
-    "webpack-dev-server": "^4.15.1"
+    "gulp-compile-handlebars": "^0.6.1",
+    "gulp-copy": "^4.0.1",
+    "gulp-mjml": "^4.0.2",
+    "gulp-rename": "^2.0.0",
+    "gulp-watch": "^5.0.1",
+    "mjml": "^4.14.1"
   }
 }

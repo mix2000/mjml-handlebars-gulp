@@ -1,0 +1,17 @@
+{
+  "email": {
+    "login": "",
+    "password": "",
+    "host": "",
+    "port": "",
+    "to": ""
+  },
+  "server": {
+    "host": "",
+    "port": "",
+    "username": "",
+    "password": "",
+    "path": ""
+  },
+  "sendTemplate": "1.html"
+}
