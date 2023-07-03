@@ -11,6 +11,7 @@ const copy = require('gulp-copy');
 const del = require('del');
 const scpClient = require('scp2');
 const mail = require('gulp-mail');
+const gulpPngquant = require('gulp-pngquant');
 
 /** Переменные используемые в сборке. */
 const variablesPathDevelop = path.join(__dirname, './config/variables.develop.json');
@@ -87,7 +88,7 @@ gulp.task('clean', () => {
 /** Задача отслеживания изменения данных шаблоны, переменные, статика. */
 gulp.task('watch', () => {
     watch('templates/*.mjml', gulp.series('compile-develop', 'clean', reload));
-    watch('config/variables.json', gulp.series('compile-develop', 'clean', reload));
+    watch('config/*.json', gulp.series('compile-develop', 'clean', reload));
     watch('static/**/*', gulp.series('copy', reload));
 });
 
@@ -100,11 +101,20 @@ gulp.task('upload-to-server', (cb) => {
         "username": gulpConfig.server.username,
         "password": gulpConfig.server.password,
         "path": gulpConfig.server.path,
-    },cb)
+    }, cb)
 });
 
+gulp.task('compress', () => {
+    return gulp.src('dist/static/**/*.png')
+        .pipe(gulpPngquant({
+            quality: '65-80'
+        }))
+        .pipe(gulp.dest('./dist/static'));
+});
+
+
 /** Функция отправки на почту. */
-gulp.task('mail', function () {
+gulp.task('mail', () => {
     const smtpInfo = {
         auth: {
             user: gulpConfig.email.login,
@@ -117,17 +127,15 @@ gulp.task('mail', function () {
 
     return gulp.src(`./dist/${gulpConfig.sendTemplate}`)
         .pipe(mail({
-            subject: 'Surprise!?',
-            to: [
-                gulpConfig.email.login
-            ],
+            subject: 'test email [develop]',
+            to: gulpConfig.email.to,
             from: `Developer <${gulpConfig.email.login}>`,
             smtp: smtpInfo
         }));
 });
 
 /** Задача отправки шаблона на почту. */
-gulp.task('send-email', gulp.series('compile-test', 'copy', 'clean', 'upload-to-server', 'mail'))
+gulp.task('send-email', gulp.series('compile-test', 'copy', 'clean', 'compress', 'upload-to-server', 'mail'))
 
 /** Задача сборки шаблона. */
 // Create a build task

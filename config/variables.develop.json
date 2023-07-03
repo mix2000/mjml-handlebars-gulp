@@ -4,6 +4,9 @@
   "styles": {
     "color": {
       "active": "#8D0808"
+    },
+    "prepare": {
+      "active": "style=\"color='#8D0808';font-weight:700\""
     }
   }
 }
