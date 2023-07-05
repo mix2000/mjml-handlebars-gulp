@@ -6,7 +6,8 @@
   "scripts": {
     "build": "gulp build",
     "serve": "gulp serve",
-    "send": "gulp send-email"
+    "send": "gulp send-email",
+    "send:light": "gulp send-email-light"
   },
   "author": "",
   "license": "ISC",
@@ -17,6 +18,7 @@
     "gulp-handlebars": "5.0.2",
     "gulp-mail": "^0.4.2",
     "gulp-pngquant": "^1.0.13",
+    "gulp-zip": "^5.1.0",
     "handlebars": "^4.7.7",
     "scp2": "^0.5.0"
   },

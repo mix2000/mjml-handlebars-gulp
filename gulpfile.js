@@ -12,6 +12,8 @@ const del = require('del');
 const scpClient = require('scp2');
 const mail = require('gulp-mail');
 const gulpPngquant = require('gulp-pngquant');
+const zip = require('gulp-zip');
+
 
 /** Переменные используемые в сборке. */
 const variablesPathDevelop = path.join(__dirname, './config/variables.develop.json');
@@ -85,6 +87,13 @@ gulp.task('clean', () => {
     return del(['temp']);
 });
 
+/** Архивация. */
+gulp.task('archive', () => {
+    return gulp.src(['./dist/*/**','./dist/*'])
+        .pipe(zip('archive.zip'))
+        .pipe(gulp.dest('./'))
+});
+
 /** Задача отслеживания изменения данных шаблоны, переменные, статика. */
 gulp.task('watch', () => {
     watch('templates/*.mjml', gulp.series('compile-develop', 'clean', reload));
@@ -136,10 +145,11 @@ gulp.task('mail', () => {
 
 /** Задача отправки шаблона на почту. */
 gulp.task('send-email', gulp.series('compile-test', 'copy', 'clean', 'compress', 'upload-to-server', 'mail'))
+gulp.task('send-email-light', gulp.series('compile-test', 'clean', 'mail'))
 
 /** Задача сборки шаблона. */
 // Create a build task
-gulp.task('build', gulp.series('compile-production', 'copy', 'clean'));
+gulp.task('build', gulp.series('compile-production', 'copy', 'clean', 'compress',  'archive'));
 
 /** Задача запуска сервера и режим разработки. */
 gulp.task('serve', gulp.series('compile-develop', 'clean', 'copy', serve, 'watch'));
