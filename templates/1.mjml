@@ -53,7 +53,7 @@
                           src="{{mainURL}}/static/mail-1/Images/logo_light.png"></mj-image>
                 <mj-spacer css-class="spacer__header" height="40px"/>
 
-                <mj-text mj-class="header" css-class="header">Поставки техники
+                <mj-text mj-class="header" css-class="header">Поставка техники
                     <span style="color:#8D0808; font-weight: 700;">Neff</span>
                 </mj-text>
                 <mj-spacer css-class="spacer__header" height="40px"/>
@@ -193,7 +193,7 @@
                     <mj-column width="50px"  css-class="col-50px">
 
                         <mj-image
-                                href="https://alpha-bt.com/mail?utm_source=sendsay&utm_medium=email&utm_campaign=neff&utm_content=WA&link=x"
+                                href="https://alpha-bt.com/mail?utm_source=sendsay&utm_medium=email&utm_campaign=neff&utm_content=WA&link=x245"
                                 align="left" padding="0" width="40px"
                                 src="{{mainURL}}/static/mail-1/Images/whatsapp.png">
                         </mj-image>
@@ -201,7 +201,7 @@
                     <mj-column width="40px"  css-class="col-40px">
 
                         <mj-image
-                                href="https://alpha-bt.com/mail?utm_source=sendsay&utm_medium=email&utm_campaign=neff&utm_content=TG&link=x245"
+                                href="https://alpha-bt.com/mail?utm_source=sendsay&utm_medium=email&utm_campaign=neff&utm_content=TG&link=x246"
                                 align="left" padding="0" width="40px"
                                 src="{{mainURL}}/static/mail-1/Images/telegram.png"></mj-image>
                     </mj-column>

@@ -103,8 +103,19 @@ gulp.task('watch', () => {
 
 
 /** Загрузка данных на сервер. */
-gulp.task('upload-to-server', (cb) => {
+gulp.task('upload-data-to-server', (cb) => {
     scpClient.scp('dist', {
+        "host": gulpConfig.server.host,
+        "port": gulpConfig.server.port,
+        "username": gulpConfig.server.username,
+        "password": gulpConfig.server.password,
+        "path": gulpConfig.server.path,
+    }, cb)
+});
+
+/** Загрузка архива на сервер. */
+gulp.task('upload-archive-to-server', (cb) => {
+    scpClient.scp('./archive.zip', {
         "host": gulpConfig.server.host,
         "port": gulpConfig.server.port,
         "username": gulpConfig.server.username,
@@ -144,12 +155,12 @@ gulp.task('mail', () => {
 });
 
 /** Задача отправки шаблона на почту. */
-gulp.task('send-email', gulp.series('compile-test', 'copy', 'clean', 'compress', 'upload-to-server', 'mail'))
+gulp.task('send-email', gulp.series('compile-test', 'copy', 'clean', 'compress', 'upload-data-to-server', 'mail'))
 gulp.task('send-email-light', gulp.series('compile-test', 'clean', 'mail'))
 
 /** Задача сборки шаблона. */
 // Create a build task
-gulp.task('build', gulp.series('compile-production', 'copy', 'clean', 'compress',  'archive'));
+gulp.task('build', gulp.series('compile-production', 'copy', 'clean', 'compress', 'upload-data-to-server', 'archive','upload-archive-to-server'));
 
 /** Задача запуска сервера и режим разработки. */
 gulp.task('serve', gulp.series('compile-develop', 'clean', 'copy', serve, 'watch'));
