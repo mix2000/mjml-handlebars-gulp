@@ -14,87 +14,43 @@
             <mj-class name="button" font-family="Montserrat" font-size="15px" padding="0" border-radius="10px"
                       width="306px" inner-padding="14px 0" text-transform="uppercase" background-color="#8D0808"
                       color="#FFEFEF"/>
-            <mj-class name="footer-text" color="#ffffff" font-size="15px" padding="0" font-family="Montserrat"/>
+
+            <mj-class name="footer-text" font-weight="400" color="#ffffff" font-size="15px" padding="0" font-family="Montserrat"/>
             <mj-class name="footer-text__bold" font-weight="600"/>
-            <mj-class name="copyright" font-weight="600" font-family="Montserrat" font-size="15px"  color="#ffffff" />
+            <mj-class name="image-main-block" width="100%"/>
+            <mj-class name="copyright" font-weight="600" font-family="Montserrat" font-size="15px" color="#ffffff"/>
         </mj-attributes>
         <mj-style>
-            @media (min-width: 481px) {
-                .image-mobile {
-                    display: none !important;
-                }
-                .d-desktop-none {
-                    display: none !important;
-                }
+            .image-main-block {
+                width: 100%;
+                max-width: 280px !important;
             }
 
-            @media (max-width: 480px) {
-                .d-mobile-none{
-                    display: none !important;
-                }
-                .header > div {
-                    font-size: 21px !important;
-                }
+            .percent-50 {
+                width: 50% !important;
+                max-width: 50% !important;
+            }
 
-                .content > div {
-                    font-size: 13px !important;
-                }
+            .col-40px {
+                width: 40px !important;
+                max-width: 40px !important;
+            }
+            .col-50px {
+                width: 50px !important;
+                max-width: 50px !important;
+            }
 
-                .mj-column-per-33 {
-                    width: 50% !important;
-                }
-
-                .button > table, .button p {
-                    width: 248px !important;
-                }
-
-                .button p {
-                    font-size: 12px !important;
-                }
-
-                .sub-header > div {
-                    font-size: 19px !important;
-                }
-
-                .image-desktop {
-                    display: none;
-                }
-
-                .spacer > div {
-                    height: 16px !important;
-                }
-
-                .spacer__header > div {
-                    height: 25px !important;
-                }
-
-                .spacer__mini > div {
-                    height: 8px !important;
-                }
-
-                .main-logo img, .main-logo td {
-                    width: 264px !important;
-                }
-
-                .col-50 {
-                    width: 50% !important;
-                    padding-top: 20px !important;
-                }
-
-                .col-40px {
-                    width: 50px !important;
-                }
-
-                .footer-block__left {
-                    margin: 0 !important;
-                }
+            .percent-33 {
+                width: 33% !important;
+                max-width: 33% !important;
             }
         </mj-style>
     </mj-head>
     <mj-body>
         <mj-section padding-bottom="0">
             <mj-column>
-                <mj-image width="430px" css-class="main-logo" align="center" padding-bottom="0" src="{{mainURL}}/static/mail-1/Images/logo_light.png"></mj-image>
+                <mj-image width="430px" css-class="main-logo" align="center" padding-bottom="0"
+                          src="{{mainURL}}/static/mail-1/Images/logo_light.png"></mj-image>
                 <mj-spacer css-class="spacer__header" height="40px"/>
 
                 <mj-text mj-class="header" css-class="header">Поставки техники
@@ -116,29 +72,58 @@
             </mj-column>
         </mj-section>
         <mj-section padding-bottom="0">
+            <mj-column width="50%" css-class="percent-50">
+                <mj-image css-class="image-main-block" padding="0 10px"
+                          src="{{mainURL}}/static/mail-1/Images/m_001.png"></mj-image>
+                <mj-spacer height="20px"/>
+            </mj-column>
+            <mj-column width="50%" css-class="percent-50">
+                <mj-image css-class="image-main-block" padding="0 10px"
+                          src="{{mainURL}}/static/mail-1/Images/m_002.png"></mj-image>
+                <mj-spacer height="20px"/>
+            </mj-column>
+        </mj-section>
+        <mj-section>
+
+            <mj-column width="50%" css-class="percent-50">
+                <mj-image css-class="image-main-block" padding="0 10px"
+                          src="{{mainURL}}/static/mail-1/Images/m_003.png"></mj-image>
+                <mj-spacer height="20px"/>
+            </mj-column>
+            <mj-column width="50%" css-class="percent-50">
+                <mj-image css-class="image-main-block" padding="0 10px"
+                          src="{{mainURL}}/static/mail-1/Images/m_004.png"></mj-image>
+                <mj-spacer height="20px"/>
+            </mj-column>
+        </mj-section>
+
+        <mj-section>
+            <mj-column width="50%" css-class="percent-50">
+                <mj-image css-class="image-main-block" padding="0 10px"
+                          src="{{mainURL}}/static/mail-1/Images/m_005.png"></mj-image>
+                <mj-spacer height="20px"/>
+            </mj-column>
+            <mj-column width="50%" css-class="percent-50">
+                <mj-image css-class="image-main-block" padding="0 10px"
+                          src="{{mainURL}}/static/mail-1/Images/m_006.png"></mj-image>
+                <mj-spacer height="20px"/>
+            </mj-column>
+        </mj-section>
+        <mj-section>
+            <mj-column css-class="percent-50">
+                <mj-raw>
+                    <img src="{{mainURL}}/static/mail-1/Images/m_007.png"
+                         style="border:0;margin:0 auto;display:block;outline:none;text-decoration:none;height:auto;width:100%;font-size:13px;max-width: 280px"
+                         height="auto">
+                </mj-raw>
+            </mj-column>
+        </mj-section>
+        <mj-section padding-bottom="0">
             <mj-column>
-                <mj-image css-class="image-desktop" padding="0" src="{{mainURL}}/static/mail-1/Images/001.png"></mj-image>
-                <mj-image css-class="image-mobile" width="200px" padding="0" src="{{mainURL}}/static/mail-1/Images/m_001.png"></mj-image>
-                <mj-spacer height="20px"/>
-                <mj-image css-class="image-desktop" padding="0" src="{{mainURL}}/static/mail-1/Images/002.png"></mj-image>
-                <mj-image css-class="image-mobile" width="200px" padding="0" src="{{mainURL}}/static/mail-1/Images/m_002.png"></mj-image>
-                <mj-spacer height="20px"/>
-                <mj-image css-class="image-desktop" padding="0" src="{{mainURL}}/static/mail-1/Images/003.png"></mj-image>
-                <mj-image css-class="image-mobile" width="200px" padding="0" src="{{mainURL}}/static/mail-1/Images/m_003.png"></mj-image>
-                <mj-spacer height="20px"/>
-                <mj-image css-class="image-desktop" padding="0" src="{{mainURL}}/static/mail-1/Images/004.png"></mj-image>
-                <mj-image css-class="image-mobile" width="200px" padding="0" src="{{mainURL}}/static/mail-1/Images/m_004.png"></mj-image>
-                <mj-spacer height="20px"/>
-                <mj-image css-class="image-desktop" padding="0" src="{{mainURL}}/static/mail-1/Images/005.png"></mj-image>
-                <mj-image css-class="image-mobile" width="200px" padding="0" src="{{mainURL}}/static/mail-1/Images/m_005.png"></mj-image>
-                <mj-spacer height="20px"/>
-                <mj-image css-class="image-desktop" padding="0" src="{{mainURL}}/static/mail-1/Images/006.png"></mj-image>
-                <mj-image css-class="image-mobile" width="200px" padding="0" src="{{mainURL}}/static/mail-1/Images/m_006.png"></mj-image>
-                <mj-spacer height="20px"/>
-                <mj-image css-class="image-desktop" padding="0" src="{{mainURL}}/static/mail-1/Images/007.png"></mj-image>
-                <mj-image css-class="image-mobile" width="200px" padding="0" src="{{mainURL}}/static/mail-1/Images/m_007.png"></mj-image>
                 <mj-spacer height="40px"/>
-                <mj-button mj-class="button" href="https://alpha-bt.com/mail?utm_source=sendsay&utm_medium=email&utm_campaign=neff&utm_content=Price_request&link=mailto:Roman@alpha-bt.com" css-class="button">
+                <mj-button mj-class="button"
+                           href="https://alpha-bt.com/mail?utm_source=sendsay&utm_medium=email&utm_campaign=neff&utm_content=Price_request&link=mailto:Roman@alpha-bt.com"
+                           css-class="button">
                     Получить прайсы и остатки
                 </mj-button>
                 <mj-spacer height="40px"/>
@@ -154,38 +139,39 @@
             </mj-column>
         </mj-section>
         <mj-section css-class="brand" padding="0">
-            <mj-column width="33%">
+            <mj-column width="33%" css-class="percent-33">
                 <mj-image padding="8px" src="{{mainURL}}/static/mail-1/Images/brand_001.png"></mj-image>
             </mj-column>
-            <mj-column width="33%">
+            <mj-column width="33%" css-class="percent-33">
                 <mj-image padding="8px" src="{{mainURL}}/static/mail-1/Images/brand_002.png"></mj-image>
             </mj-column>
-            <mj-column width="33%">
+            <mj-column width="33%" css-class="percent-33">
                 <mj-image padding="8px" src="{{mainURL}}/static/mail-1/Images/brand_003.png"></mj-image>
             </mj-column>
-            <mj-column width="33%">
+            <mj-column width="33%" css-class="percent-33">
                 <mj-image padding="8px" src="{{mainURL}}/static/mail-1/Images/brand_004.png"></mj-image>
             </mj-column>
-            <mj-column width="33%">
+            <mj-column width="33%" css-class="percent-33">
                 <mj-image padding="8px" src="{{mainURL}}/static/mail-1/Images/brand_005.png"></mj-image>
             </mj-column>
-            <mj-column width="33%">
+            <mj-column width="33%" css-class="percent-33">
                 <mj-image padding="8px" src="{{mainURL}}/static/mail-1/Images/brand_006.png"></mj-image>
             </mj-column>
-            <mj-column width="33%">
+            <mj-column width="33%" css-class="percent-33">
                 <mj-image padding="8px" src="{{mainURL}}/static/mail-1/Images/brand_007.png"></mj-image>
             </mj-column>
-            <mj-column width="33%" css-class="d-mobile-none">
+            <mj-column width="33%" css-class="percent-33">
                 <mj-image padding="8px" src="{{mainURL}}/static/mail-1/Images/brand_008.png"></mj-image>
             </mj-column>
-            <mj-column width="33%">
+            <mj-column width="33%" css-class="percent-33">
                 <mj-image padding="8px" src="{{mainURL}}/static/mail-1/Images/brand_009.png"></mj-image>
             </mj-column>
         </mj-section>
         <mj-section padding="0">
             <mj-column padding="0">
                 <mj-spacer css-class="spacer" height="40px"/>
-                <mj-button mj-class="button" css-class="button" href="https://alpha-bt.com/mail?utm_source=sendsay&utm_medium=email&utm_campaign=neff&utm_content=Request_classic&link=mailto:Roman@alpha-bt.com">
+                <mj-button mj-class="button" css-class="button"
+                           href="https://alpha-bt.com/mail?utm_source=sendsay&utm_medium=email&utm_campaign=neff&utm_content=Request_classic&link=mailto:Roman@alpha-bt.com">
                     Рассчитать заказ
                 </mj-button>
                 <mj-spacer height="40px"/>
@@ -194,19 +180,34 @@
         <mj-section background-color="#333333" padding="0 30px">
             <mj-spacer height="30px"/>
 
-            <mj-column padding="0" width="45%">
+            <mj-column padding="0" width="50%"  css-class="percent-50">
                 <mj-image align="left" padding="0" width="140px"
                           src="{{mainURL}}/static/mail-1/Images/footer_logo.png"></mj-image>
-                <mj-spacer css-class="spacer" height="40px"/>
-                <mj-text mj-class="footer-text" css-class="d-mobile-none" padding-bottom="5px">Все права защищены</mj-text>
-                <mj-text mj-class="footer-text" css-class="d-mobile-none">
-                    <span style="color: #FFFFFF; text-decoration: none; font-family: 'Montserrat'; font-size: 13px">
-                        Политика конфиденциальности
-                    </span>
-                </mj-text>
+                <mj-spacer css-class="spacer" height="20px"/>
+                <mj-section padding="0" text-align="left">
+                    <mj-column width="100%">
+                        <mj-text mj-class="footer-text" padding-bottom="5px">
+                            Пишите или звоните:
+                        </mj-text>
+                    </mj-column>
+                    <mj-column width="50px"  css-class="col-50px">
 
+                        <mj-image
+                                href="https://alpha-bt.com/mail?utm_source=sendsay&utm_medium=email&utm_campaign=neff&utm_content=WA&link=x"
+                                align="left" padding="0" width="40px"
+                                src="{{mainURL}}/static/mail-1/Images/whatsapp.png">
+                        </mj-image>
+                    </mj-column>
+                    <mj-column width="40px"  css-class="col-40px">
+
+                        <mj-image
+                                href="https://alpha-bt.com/mail?utm_source=sendsay&utm_medium=email&utm_campaign=neff&utm_content=TG&link=x245"
+                                align="left" padding="0" width="40px"
+                                src="{{mainURL}}/static/mail-1/Images/telegram.png"></mj-image>
+                    </mj-column>
+                </mj-section>
             </mj-column>
-            <mj-column width="35%" css-class="col-50" vertical-align="bottom">
+            <mj-column width="50%" css-class="percent-50" vertical-align="middle">
                 <mj-text mj-class="footer-text footer-text__bold" padding-bottom="5px">Санкт-Петербург:</mj-text>
                 <mj-text mj-class="footer-text">
                     <a href="https://alpha-bt.com/mail?utm_source=sendsay&utm_medium=email&utm_campaign=neff&utm_content=CALL_SPB&link=tel:+7(993)908-83-87"
@@ -224,29 +225,11 @@
                     </a>
                 </mj-text>
             </mj-column>
-            <mj-column width="20%" css-class="col-50" vertical-align="bottom">
-                <mj-text mj-class="footer-text" padding-bottom="5px">
-                    Пишите<br/>или звоните:
-                </mj-text>
-                <mj-spacer css-class="spacer__mini" height="20px"/>
-                <mj-section padding="0" text-align="left" css-class="footer-block__left">
-                    <mj-column padding="0 10px 0 0" width="50px" css-class="col-40px">
-                        <mj-image href="https://alpha-bt.com/mail?utm_source=sendsay&utm_medium=email&utm_campaign=neff&utm_content=WA&link=x" align="left" padding="0" width="40px"
-                                  src="{{mainURL}}/static/mail-1/Images/whatsapp.png">
-                        </mj-image>
-                    </mj-column>
-
-                    <mj-column padding="0" width="40px" css-class="col-40px">
-                        <mj-image href="https://alpha-bt.com/mail?utm_source=sendsay&utm_medium=email&utm_campaign=neff&utm_content=TG&link=x245" align="left" padding="0" width="40px"
-                                  src="{{mainURL}}/static/mail-1/Images/telegram.png"></mj-image>
-                    </mj-column>
-                </mj-section>
-            </mj-column>
-            <mj-column css-class="d-desktop-none">
-                <mj-spacer height="10px"/>
-                <mj-text align="center" mj-class="copyright">
-                  Оптовые поставки бытовой техники
-                </mj-text>
+            <mj-column width="100%">
+                <mj-spacer height="20px"/>
+                <mj-text mj-class="footer-text" padding-bottom="5px">Все права защищены  | <span style="color: #FFFFFF; text-decoration: none; font-family: 'Montserrat'">
+                    Политика конфиденциальности
+                </span></mj-text>
             </mj-column>
             <mj-spacer css-class="spacer" height="40px"/>
         </mj-section>
