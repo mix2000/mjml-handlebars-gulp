@@ -1,0 +1,23 @@
+.image-main-block {
+    width: 100%;
+    max-width: 280px !important;
+}
+
+.percent-50 {
+    width: 50% !important;
+    max-width: 50% !important;
+}
+
+.col-40px {
+    width: 40px !important;
+    max-width: 40px !important;
+}
+.col-50px {
+    width: 50px !important;
+    max-width: 50px !important;
+}
+
+.percent-33 {
+    width: 33% !important;
+    max-width: 33% !important;
+}
