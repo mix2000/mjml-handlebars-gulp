@@ -20,32 +20,8 @@
             <mj-class name="image-main-block" width="100%"/>
             <mj-class name="copyright" font-weight="600" font-family="Montserrat" font-size="15px" color="#ffffff"/>
         </mj-attributes>
-        <!-- <mj-style>
-            .image-main-block {
-                width: 100%;
-                max-width: 280px !important;
-            }
 
-            .percent-50 {
-                width: 50% !important;
-                max-width: 50% !important;
-            }
-
-            .col-40px {
-                width: 40px !important;
-                max-width: 40px !important;
-            }
-            .col-50px {
-                width: 50px !important;
-                max-width: 50px !important;
-            }
-
-            .percent-33 {
-                width: 33% !important;
-                max-width: 33% !important;
-            }
-        </mj-style> -->
-            <mj-include path="./css/styles.css" type="css" />
+        <mj-include path="./styles.css" type="css" />
     </mj-head>
     <mj-body>
         <mj-section padding-bottom="0">
@@ -58,7 +34,7 @@
                     <span style="color:#8D0808; font-weight: 700;">Neff</span>
                 </mj-text>
                 <mj-spacer css-class="spacer__header" height="40px"/>
-                
+
                 <mj-text mj-class="content" css-class="content" font-weight="bold">Коллеги, доброго дня!</mj-text>
                 <mj-text mj-class="content" css-class="content">Мы являемся импортёром бытовой техники
                     <span style="color:#8D0808; font-weight: 700;">Neff</span>

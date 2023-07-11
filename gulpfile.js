@@ -1,6 +1,7 @@
 const path = require('path');
 const gulp = require('gulp');
 const mjml = require('gulp-mjml');
+const sass = require('gulp-sass')(require('sass'));
 const handlebars = require('gulp-compile-handlebars');
 const rename = require('gulp-rename');
 const fs = require('fs');
@@ -55,6 +56,14 @@ function compile(variables) {
         .pipe(gulp.dest('dist'));
 }
 
+/** Задача компиляции scss */
+gulp.task('compile-scss', function() {
+    return gulp.src('templates/scss/*.scss')
+        .pipe(sass().on('error', sass.logError))
+        .pipe(rename({extname: '.css'}))
+        .pipe(gulp.dest('temp'));
+});
+
 /** Задача подстановки данных и компиляции девелоп режим. */
 gulp.task('compile-develop', function () {
     return compile(variablesDevelop);
@@ -96,6 +105,7 @@ gulp.task('archive', () => {
 
 /** Задача отслеживания изменения данных шаблоны, переменные, статика. */
 gulp.task('watch', () => {
+    watch('templates/scss/*.scss', gulp.series('compile-scss','compile-develop', 'clean', reload));
     watch('templates/*.mjml', gulp.series('compile-develop', 'clean', reload));
     watch('config/*.json', gulp.series('compile-develop', 'clean', reload));
     watch('static/**/*', gulp.series('copy', reload));
@@ -155,13 +165,13 @@ gulp.task('mail', () => {
 });
 
 /** Задача отправки шаблона на почту. */
-gulp.task('send-email', gulp.series('compile-test', 'copy', 'clean', 'compress', 'upload-data-to-server', 'mail'))
-gulp.task('send-email-light', gulp.series('compile-test', 'clean', 'mail'))
+gulp.task('send-email', gulp.series('compile-scss', 'compile-test', 'copy', 'clean', 'compress', 'upload-data-to-server', 'mail'))
+gulp.task('send-email-light', gulp.series('compile-scss', 'compile-test', 'clean', 'mail'))
 
 /** Задача сборки шаблона. */
 // Create a build task
-gulp.task('build', gulp.series('compile-production', 'copy', 'clean', 'compress', 'upload-data-to-server', 'archive','upload-archive-to-server'));
+gulp.task('build', gulp.series('compile-scss', 'compile-production', 'copy', 'clean', 'compress', 'upload-data-to-server', 'archive','upload-archive-to-server'));
 
 /** Задача запуска сервера и режим разработки. */
-gulp.task('serve', gulp.series('compile-develop', 'clean', 'copy', serve, 'watch'));
+gulp.task('serve', gulp.series('compile-scss', 'compile-develop', 'clean', 'copy', serve, 'watch'));
 
