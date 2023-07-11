@@ -106,8 +106,8 @@ gulp.task('archive', () => {
 /** Задача отслеживания изменения данных шаблоны, переменные, статика. */
 gulp.task('watch', () => {
     watch('templates/scss/*.scss', gulp.series('compile-scss','compile-develop', 'clean', reload));
-    watch('templates/*.mjml', gulp.series('compile-develop', 'clean', reload));
-    watch('config/*.json', gulp.series('compile-develop', 'clean', reload));
+    watch('templates/*.mjml', gulp.series('compile-scss', 'compile-develop', 'clean', reload));
+    watch('config/*.json', gulp.series('compile-scss', 'compile-develop', 'clean', reload));
     watch('static/**/*', gulp.series('copy', reload));
 });
 
