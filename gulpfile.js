@@ -174,4 +174,3 @@ gulp.task('build', gulp.series('compile-scss', 'compile-production', 'copy', 'cl
 
 /** Задача запуска сервера и режим разработки. */
 gulp.task('serve', gulp.series('compile-scss', 'compile-develop', 'clean', 'copy', serve, 'watch'));
-

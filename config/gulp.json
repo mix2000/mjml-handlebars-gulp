@@ -1,10 +1,10 @@
 {
   "email": {
-    "login": "",
+    "login": "mrvadim2000@mail.ru",
     "password": "",
-    "host": "",
-    "port": "",
-    "to": ""
+    "host": "smtp.mail.ru",
+    "port": "465",
+    "to": ["mrvadim2000@yandex.ru"]
   },
   "server": {
     "host": "",
@@ -13,5 +13,5 @@
     "password": "",
     "path": ""
   },
-  "sendTemplate": "1.html"
+  "sendTemplate": "2.html"
 }

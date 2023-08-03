@@ -1,0 +1,22 @@
+<mjml>
+  <mj-head>
+  </mj-head>
+  <mj-body>
+    <mj-section>
+      <mj-column mj-class="header">
+        <mj-image width="110px" src="{{mainURL}}/static/mail-2/Images/logo.png" alt="ALPHA" />
+        <mj-spacer height="16px" />
+        <mj-text>Оптовые поставки бытовой техники</mj-text>
+        <mj-spacer height="16px" />
+        <mj-social font-size="16px" icon-size="30px" mode="horizontal">
+          <mj-social-element src="{{mainURL}}/static/mail-2/Images/Phone.png" href="" padding-right="10px">
+            8 (800) 350 85 18
+          </mj-social-element>
+          <mj-social-element src="{{mainURL}}/static/mail-2/Images/Telegram.png" href="" padding="0 20px" />
+          <mj-social-element src="{{mainURL}}/static/mail-2/Images/WhatsApp.png" href="">
+          </mj-social-element>
+        </mj-social>
+      </mj-column>
+    </mj-section>
+  </mj-body>
+</mjml>

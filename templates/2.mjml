@@ -1,0 +1,226 @@
+<mjml>
+  <mj-head>
+    <mj-font
+      name="Arial"
+      href="https://fonts.googleapis.com/css?family=Arial"
+    />
+    <mj-attributes>
+      <mj-section padding="0px" />
+      <!-- background-color="#F7F7F7" -->
+      <mj-image padding="0px" />
+      <mj-text
+        padding="0px"
+        color="#6C6C6A"
+        font-family="Arial"
+        font-size="16px"
+      />
+      <mj-social padding="0px" />
+      <mj-social-element
+        padding="0px"
+        color="#6C6C6A"
+        align="center"
+        font-family="Arial"
+        font-size="16px"
+      />
+
+      <mj-class name="header" padding="16px 0px" background-color="#E7E7E5" />
+    </mj-attributes>
+
+    <mj-include path="./styles.css" type="css" />
+  </mj-head>
+  <mj-body background-color="#F7F7F7" max-width="600px">
+    <!-- Header section -->
+    <mj-section>
+      <mj-column mj-class="header">
+        <mj-image
+          width="110px"
+          src="{{mainURL}}/static/mail-2/Images/logo.svg"
+          alt="ALPHA"
+        />
+        <mj-spacer height="16px" />
+        <mj-text align="center">Оптовые поставки бытовой техники</mj-text>
+        <mj-spacer height="16px" />
+        <mj-social font-size="16px" icon-size="30px" mode="horizontal">
+          <mj-social-element
+            src="{{mainURL}}/static/mail-2/Images/phone.png"
+            href=""
+            padding-right="10px"
+          >
+            8 (800) 350 85 18
+          </mj-social-element>
+          <mj-social-element
+            src="{{mainURL}}/static/mail-2/Images/telegram.png"
+            href=""
+            padding="0 20px"
+          />
+          <mj-social-element
+            src="{{mainURL}}/static/mail-2/Images/whatsApp.png"
+            href=""
+          >
+          </mj-social-element>
+        </mj-social>
+      </mj-column>
+    </mj-section>
+
+    <!-- Hero -->
+    <mj-hero
+      mode="fluid-height"
+      background-width="600px"
+      background-height="370px"
+      background-url="{{mainURL}}/static/mail-2/Images/hero.png"
+    />
+    <mj-section>
+      <mj-column>
+        <mj-text>
+          <img
+            src="{{mainURL}}/static/mail-2/Images/hero-part.svg"
+            srcset="
+              {{mainURL}}/static/mail-2/Images/hero-part-mobile.svg 136w,
+              {{mainURL}}/static/mail-2/Images/hero-part.svg        178w
+            "
+            sizes="(max-width: 480px) 136px, 178px"
+            alt="480 моделей техники Miele"
+            align="left"
+            style="margin-top: -106px"
+          />
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <mj-section padding="40px 6%">
+      <mj-column>
+        <mj-text
+          color="#1E423E"
+          font-weight="700"
+          font-size="22px"
+          line-height="120%"
+        >
+          Поставка оригинальной бытовой техники Miele
+          <span
+            style="
+              background-image: linear-gradient(
+                270deg,
+                rgba(0, 255, 227, 0.18) 0%,
+                rgba(138, 164, 255, 0.33) 100%
+              );
+            "
+          >
+            с честной <span style="color: #63c813">гарантией 1 год</span> по
+            договору.
+          </span>
+        </mj-text>
+        <mj-spacer height="30px" />
+        <mj-text line-height="24px">
+          Мы успешно снабжаем более 300 интерьерных и кухонных салонов России
+          техникой на оптовых условиях.
+        </mj-text>
+        <mj-spacer height="16px" />
+        <mj-text line-height="24px">
+          У нас вы найдете самый полный ассортимент техники Miele с немецкого,
+          итальянского, восточно-европейского рынка, и рынков СНГ.
+        </mj-text>
+        <mj-button
+          padding="30px 0"
+          background-color="linear-gradient(90deg, #00FFE3 0%, rgba(138, 164, 255, 0.33) 100%, #8AA4FF 100%)"
+          width="264px"
+          border-radius="4px"
+          inner-padding="10px"
+          color="#333333"
+          font-family="Arial"
+          font-size="16px"
+          font-weight="700"
+          line-height="24px"
+        >
+          Получить прайс
+        </mj-button>
+      </mj-column>
+    </mj-section>
+
+    <!-- Catalog -->
+    <mj-wrapper background-color="#F7F7F7" padding="0 0 65px">
+      <mj-section
+        background-color="#FFF"
+        border-radius="4px"
+        padding="0 15px 20px"
+      >
+        <mj-column width="100%">
+          <mj-text
+            color="#333"
+            font-weight="700"
+            font-size="24px"
+            line-height="120%"
+            align="center"
+            padding="20px"
+          >
+            Каталог
+          </mj-text>
+        </mj-column>
+        <mj-column width="50%">
+          <mj-image
+            padding="10px"
+            src="{{mainURL}}/static/mail-2/Images/catalog-item1.png"
+          ></mj-image>
+          <mj-image
+            padding="10px"
+            src="{{mainURL}}/static/mail-2/Images/catalog-item2.png"
+          ></mj-image>
+          <mj-image
+            padding="10px"
+            src="{{mainURL}}/static/mail-2/Images/catalog-item3.png"
+          ></mj-image>
+        </mj-column>
+        <mj-column width="50%">
+          <mj-image
+            padding="10px"
+            src="{{mainURL}}/static/mail-2/Images/catalog-item4.png"
+          ></mj-image>
+          <mj-image
+            padding="10px"
+            src="{{mainURL}}/static/mail-2/Images/catalog-item5.png"
+          ></mj-image>
+          <mj-image
+            padding="10px"
+            src="{{mainURL}}/static/mail-2/Images/catalog-item6.png"
+          ></mj-image>
+        </mj-column>
+      </mj-section>
+    </mj-wrapper>
+
+    <!-- About us -->
+    <mj-wrapper
+      background-color="linear-gradient(90deg, rgba(4, 207, 220, 1) 0%, rgba(138, 164, 255, 1) 100%)"
+      padding="20px 40px 75px"
+    >
+      <mj-section>
+        <mj-column width="100%">
+          <mj-text
+            color="#F7F7F7"
+            font-weight="700"
+            font-size="24px"
+            line-height="120%"
+            align="center"
+            padding="20px"
+          >
+            О НАС
+          </mj-text>
+        </mj-column>
+      </mj-section>
+      <mj-section>
+        <mj-column width="50%">
+          <mj-image src="{{mainURL}}/static/mail-2/Images/about-us1.png" />
+        </mj-column>
+        <mj-column width="50%">
+          <mj-image src="{{mainURL}}/static/mail-2/Images/about-us2.png" />
+        </mj-column>
+      </mj-section>
+      <mj-section>
+        <mj-column width="50%">
+          <mj-image src="{{mainURL}}/static/mail-2/Images/about-us3.png" />
+        </mj-column>
+        <mj-column width="50%">
+          <mj-image src="{{mainURL}}/static/mail-2/Images/about-us4.png" />
+        </mj-column>
+      </mj-section>
+    </mj-wrapper>
+  </mj-body>
+</mjml>
