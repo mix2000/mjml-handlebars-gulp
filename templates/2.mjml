@@ -2,8 +2,7 @@
   <mj-head>
     <mj-font
       name="Arial"
-      href="https://fonts.googleapis.com/css?family=Arial"
-    />
+      href="https://fonts.googleapis.com/css?family=Arial" />
     <mj-attributes>
       <mj-section padding="0px" />
       <!-- background-color="#F7F7F7" -->
@@ -13,20 +12,34 @@
         color="#6C6C6A"
         font-family="Arial"
         font-size="16px"
-      />
+        line-height="120%" />
       <mj-social padding="0px" />
       <mj-social-element
         padding="0px"
         color="#6C6C6A"
         align="center"
         font-family="Arial"
+        font-size="16px" />
+      <mj-button
+        padding="0"
+        border-radius="4px"
+        inner-padding="10px"
+        color="#333333"
+        font-family="Arial"
         font-size="16px"
-      />
+        font-weight="700"
+        line-height="24px" />
+      <mj-wrapper padding="0" />
 
-      <mj-class name="header" padding="16px 0px" background-color="#E7E7E5" />
+      <mj-class
+        name="header"
+        padding="16px 0px"
+        background-color="#E7E7E5" />
     </mj-attributes>
 
-    <mj-include path="./styles.css" type="css" />
+    <mj-include
+      path="./styles.css"
+      type="css" />
   </mj-head>
   <mj-body background-color="#F7F7F7">
     <!-- Header section -->
@@ -34,29 +47,28 @@
       <mj-column mj-class="header">
         <mj-image
           width="110px"
-          src="{{mainURL}}/static/mail-2/Images/logo.png"
-          alt="ALPHA"
-        />
+          src="{{mainURL}}/static/mail-2/Images/logo-header.png"
+          alt="ALPHA" />
         <mj-spacer height="16px" />
         <mj-text align="center">Оптовые поставки бытовой техники</mj-text>
         <mj-spacer height="16px" />
-        <mj-social font-size="16px" icon-size="30px" mode="horizontal">
+        <mj-social
+          font-size="16px"
+          icon-size="30px"
+          mode="horizontal">
           <mj-social-element
             src="{{mainURL}}/static/mail-2/Images/phone.png"
             href=""
-            padding-right="10px"
-          >
+            padding-right="10px">
             8 (800) 350 85 18
           </mj-social-element>
           <mj-social-element
             src="{{mainURL}}/static/mail-2/Images/telegram.png"
             href=""
-            padding="0 20px"
-          />
+            padding="0 20px" />
           <mj-social-element
-            src="{{mainURL}}/static/mail-2/Images/whatsApp.png"
-            href=""
-          >
+            src="{{mainURL}}/static/mail-2/Images/whatsapp.png"
+            href="">
           </mj-social-element>
         </mj-social>
       </mj-column>
@@ -66,35 +78,16 @@
     <mj-hero
       mode="fluid-height"
       background-width="600px"
-      background-height="370px"
+      background-height="453px"
       background-url="{{mainURL}}/static/mail-2/Images/hero.png"
-    />
-    <mj-section>
-      <mj-column>
-        <mj-text>
-          <img
-            src="{{mainURL}}/static/mail-2/Images/hero-part.png"
-            srcset="
-              {{mainURL}}/static/mail-2/Images/hero-part-mobile.png 136w,
-              {{mainURL}}/static/mail-2/Images/hero-part.png        178w
-            "
-            sizes="(max-width: 480px) 136px, 178px"
-            alt="480 моделей техники Miele"
-            align="left"
-            style="margin-top: -106px"
-          />
-        </mj-text>
-      </mj-column>
-    </mj-section>
-
+      background-color="#F7F7F7" />
     <mj-section padding="40px 6%">
       <mj-column>
         <mj-text
           color="#1E423E"
           font-weight="700"
           font-size="22px"
-          line-height="120%"
-        >
+          line-height="120%">
           Поставка оригинальной бытовой техники Miele
           <span
             style="
@@ -103,8 +96,7 @@
                 rgba(0, 255, 227, 0.18) 0%,
                 rgba(138, 164, 255, 0.33) 100%
               );
-            "
-          >
+            ">
             с честной <span style="color: #63c813">гарантией 1 год</span> по
             договору.
           </span>
@@ -121,28 +113,21 @@
         </mj-text>
         <mj-button
           padding="30px 0"
-          background-color="linear-gradient(90deg, #00FFE3 0%, rgba(138, 164, 255, 0.33) 100%, #8AA4FF 100%)"
-          width="264px"
-          border-radius="4px"
-          inner-padding="10px"
-          color="#333333"
-          font-family="Arial"
-          font-size="16px"
-          font-weight="700"
-          line-height="24px"
-        >
+          background-color="linear-gradient(90deg, rgba(0, 255, 227, 1) 0%, rgba(138, 164, 255, 0.33) 100%)"
+          width="264px">
           Получить прайс
         </mj-button>
       </mj-column>
     </mj-section>
 
     <!-- Catalog -->
-    <mj-wrapper background-color="#F7F7F7" padding="0 0 65px">
+    <mj-wrapper
+      background-color="#F7F7F7"
+      padding="0 0 10%">
       <mj-section
         background-color="#FFF"
         border-radius="4px"
-        padding="0 15px 20px"
-      >
+        padding="0 15px 20px">
         <mj-column width="100%">
           <mj-text
             color="#333"
@@ -150,38 +135,31 @@
             font-size="24px"
             line-height="120%"
             align="center"
-            padding="20px"
-          >
+            padding="20px">
             Каталог
           </mj-text>
         </mj-column>
         <mj-column width="50%">
           <mj-image
             padding="10px"
-            src="{{mainURL}}/static/mail-2/Images/catalog-item1.png"
-          ></mj-image>
+            src="{{mainURL}}/static/mail-2/Images/catalog-item1.png"></mj-image>
           <mj-image
             padding="10px"
-            src="{{mainURL}}/static/mail-2/Images/catalog-item2.png"
-          ></mj-image>
+            src="{{mainURL}}/static/mail-2/Images/catalog-item2.png"></mj-image>
           <mj-image
             padding="10px"
-            src="{{mainURL}}/static/mail-2/Images/catalog-item3.png"
-          ></mj-image>
+            src="{{mainURL}}/static/mail-2/Images/catalog-item3.png"></mj-image>
         </mj-column>
         <mj-column width="50%">
           <mj-image
             padding="10px"
-            src="{{mainURL}}/static/mail-2/Images/catalog-item4.png"
-          ></mj-image>
+            src="{{mainURL}}/static/mail-2/Images/catalog-item4.png"></mj-image>
           <mj-image
             padding="10px"
-            src="{{mainURL}}/static/mail-2/Images/catalog-item5.png"
-          ></mj-image>
+            src="{{mainURL}}/static/mail-2/Images/catalog-item5.png"></mj-image>
           <mj-image
             padding="10px"
-            src="{{mainURL}}/static/mail-2/Images/catalog-item6.png"
-          ></mj-image>
+            src="{{mainURL}}/static/mail-2/Images/catalog-item6.png"></mj-image>
         </mj-column>
       </mj-section>
     </mj-wrapper>
@@ -189,8 +167,7 @@
     <!-- About us -->
     <mj-wrapper
       background-color="linear-gradient(90deg, rgba(4, 207, 220, 1) 0%, rgba(138, 164, 255, 1) 100%)"
-      padding="20px 40px 75px"
-    >
+      padding="20px 0 0 40px">
       <mj-section>
         <mj-column width="100%">
           <mj-text
@@ -199,33 +176,221 @@
             font-size="24px"
             line-height="120%"
             align="center"
-            padding="20px"
-          >
-            О НАС
+            padding="20px 40px 20px 20px"
+            text-transform="uppercase">
+            О нас
           </mj-text>
         </mj-column>
       </mj-section>
-      <mj-section>
+      <mj-section padding-right="40px">
         <mj-column width="50%">
-          <mj-image src="{{mainURL}}/static/mail-2/Images/about-us1.png" />
+          <mj-image
+            padding="15px 0"
+            src="{{mainURL}}/static/mail-2/Images/about-us1.png"
+            fluid-on-mobile="true" />
         </mj-column>
         <mj-column width="50%">
-          <mj-image src="{{mainURL}}/static/mail-2/Images/about-us2.png" />
+          <mj-image
+            padding="15px 0"
+            src="{{mainURL}}/static/mail-2/Images/about-us2.png"
+            fluid-on-mobile="true" />
+        </mj-column>
+      </mj-section>
+      <mj-section padding-right="40px">
+        <mj-column width="50%">
+          <mj-image
+            padding="15px 0"
+            src="{{mainURL}}/static/mail-2/Images/about-us3.png"
+            fluid-on-mobile="true" />
+        </mj-column>
+        <mj-column width="50%">
+          <mj-image
+            padding="15px 0"
+            src="{{mainURL}}/static/mail-2/Images/about-us4.png"
+            fluid-on-mobile="true" />
         </mj-column>
       </mj-section>
       <mj-section>
         <mj-column width="50%">
-          <mj-image src="{{mainURL}}/static/mail-2/Images/about-us3.png" />
+          <mj-image
+            padding="15px 0"
+            src="{{mainURL}}/static/mail-2/Images/about-us5.png"
+            fluid-on-mobile="true" />
         </mj-column>
         <mj-column width="50%">
-          <mj-image src="{{mainURL}}/static/mail-2/Images/about-us4.png" />
+          <mj-image
+            src="{{mainURL}}/static/mail-2/Images/about-us-logo.png"
+            align="right" />
         </mj-column>
       </mj-section>
+    </mj-wrapper>
+
+    <mj-spacer height="50px" />
+
+    <!-- Call-to-Action -->
+    <mj-section
+      background-url="{{mainURL}}/static/mail-2/Images/cta-background.png"
+      padding="7% 5%">
+      <mj-column
+        width="50%"
+        padding-bottom="20px">
+        <mj-text
+          color="#F7F7F7"
+          align="center">
+          Получить специальное предложение для новых дилеров
+        </mj-text>
+      </mj-column>
+      <mj-column width="50%">
+        <mj-button
+          background-color="linear-gradient(90deg, rgba(0, 255, 227, 1) 0%, rgba(138, 164, 255, 1) 100%)"
+          width="220px">
+          Связаться
+        </mj-button>
+      </mj-column>
+    </mj-section>
+
+    <!-- Fabrics -->
+    <mj-section padding="15% 0">
+      <mj-column>
+        <mj-text
+          align="center"
+          font-size="24px"
+          padding="0 10%"
+          line-height="35px"
+          color="#333">
+          <span
+            style="
+              background-image: linear-gradient(
+                270deg,
+                rgba(0, 255, 227, 0.18) 0%,
+                rgba(138, 164, 255, 0.33) 100%
+              );
+            ">
+            Мы прямой
+            <span style="color: #3d3533; font-weight: 700">
+              импортер 45 фабрик
+            </span>
+            бытовой техники
+            <span style="color: #3d3533; font-weight: 700"> из 12 стран</span>
+          </span>
+        </mj-text>
+        <mj-image
+          src="{{mainURL}}/static/mail-2/Images/fabrics.png"
+          alt="Fabrics"
+          padding-top="7.5%" />
+      </mj-column>
+    </mj-section>
+
+    <!-- Partners -->
+    <mj-section>
+      <mj-column>
+        <mj-text
+          text-transform="uppercase"
+          align="center"
+          color="#1E423E"
+          font-size="22px"
+          font-weight="700">
+          Наши партнеры
+        </mj-text>
+        <mj-image
+          src="{{mainURL}}/static/mail-2/Images/partners.png"
+          alt="Partners"
+          padding="7.5% 0 10%" />
+      </mj-column>
+    </mj-section>
+
+    <!-- Footer -->
+    <mj-wrapper
+      background-color="linear-gradient(90deg, rgba(8, 24, 23, 0.66) 4.17%, rgba(26, 48, 45, 0.66) 100%)"
+      padding="40px 40px 20px">
       <mj-section>
-        <mj-column width="50%">
-          <mj-image src="{{mainURL}}/static/mail-2/Images/about-us5.png" />
+        <mj-column width="100%">
+          <mj-image
+            src="{{mainURL}}/static/mail-2/Images/logo-footer.png"
+            alt="ALPHA"
+            width="110px"
+            align="left" />
+          <mj-spacer height="40px" />
         </mj-column>
-        <mj-column width="50%"></mj-column>
+        <mj-column width="100%">
+          <mj-text
+            color="#E7E7E5"
+            font-size="20px">
+            Отдел по работе с дилерами:
+          </mj-text>
+          <mj-spacer height="30px" />
+        </mj-column>
+        <mj-column
+          width="45%"
+          padding-bottom="50px">
+          <mj-text
+            color="#E7E7E5"
+            font-size="16px">
+            г. Москва, Одинцово, ул. Маковского д. 7, строение 7
+          </mj-text>
+          <mj-spacer height="10px" />
+          <mj-text
+            color="#E7E7E5"
+            font-size="16px"
+            text-decoration="underline">
+            +7 (495) 299 77 12
+          </mj-text>
+        </mj-column>
+        <mj-column width="20%"></mj-column>
+        <mj-column
+          width="35%"
+          padding-bottom="50px">
+          <mj-text
+            color="#E7E7E5"
+            font-size="16px">
+            г. Санкт-Петербург пр. Пискаревский д. 171 к 1
+          </mj-text>
+          <mj-spacer height="10px" />
+          <mj-text
+            color="#E7E7E5"
+            font-size="16px"
+            text-decoration="underline">
+            +7 (812) 312 77 32
+          </mj-text>
+        </mj-column>
+      </mj-section>
+      <mj-section direction="rtl">
+        <mj-column
+          width="35%"
+          padding-bottom="20px">
+          <mj-text
+            color="#E7E7E5"
+            font-size="16px"
+            padding="5px 0">
+            order@alpha-bt.com
+          </mj-text>
+        </mj-column>
+        <mj-column
+          width="65%"
+          padding-right="10px">
+          <mj-social
+            font-size="16px"
+            icon-size="30px"
+            mode="horizontal"
+            align="left">
+            <mj-social-element
+              src="{{mainURL}}/static/mail-2/Images/telegram-footer.png"
+              href=""
+              padding-bottom="20px">
+            </mj-social-element>
+            <mj-social-element
+              src="{{mainURL}}/static/mail-2/Images/whatsapp-footer.png"
+              href=""
+              padding="0 20px 20px" />
+            <mj-social-element
+              src="{{mainURL}}/static/mail-2/Images/phone-footer.png"
+              href=""
+              padding-right="10px"
+              color="#E7E7E5">
+              8 (800) 350 85 18
+            </mj-social-element>
+          </mj-social>
+        </mj-column>
       </mj-section>
     </mj-wrapper>
   </mj-body>
