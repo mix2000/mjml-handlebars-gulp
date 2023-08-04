@@ -28,13 +28,13 @@
 
     <mj-include path="./styles.css" type="css" />
   </mj-head>
-  <mj-body background-color="#F7F7F7" max-width="600px">
+  <mj-body background-color="#F7F7F7">
     <!-- Header section -->
     <mj-section>
       <mj-column mj-class="header">
         <mj-image
           width="110px"
-          src="{{mainURL}}/static/mail-2/Images/logo.svg"
+          src="{{mainURL}}/static/mail-2/Images/logo.png"
           alt="ALPHA"
         />
         <mj-spacer height="16px" />
@@ -73,10 +73,10 @@
       <mj-column>
         <mj-text>
           <img
-            src="{{mainURL}}/static/mail-2/Images/hero-part.svg"
+            src="{{mainURL}}/static/mail-2/Images/hero-part.png"
             srcset="
-              {{mainURL}}/static/mail-2/Images/hero-part-mobile.svg 136w,
-              {{mainURL}}/static/mail-2/Images/hero-part.svg        178w
+              {{mainURL}}/static/mail-2/Images/hero-part-mobile.png 136w,
+              {{mainURL}}/static/mail-2/Images/hero-part.png        178w
             "
             sizes="(max-width: 480px) 136px, 178px"
             alt="480 моделей техники Miele"
@@ -220,6 +220,12 @@
         <mj-column width="50%">
           <mj-image src="{{mainURL}}/static/mail-2/Images/about-us4.png" />
         </mj-column>
+      </mj-section>
+      <mj-section>
+        <mj-column width="50%">
+          <mj-image src="{{mainURL}}/static/mail-2/Images/about-us5.png" />
+        </mj-column>
+        <mj-column width="50%"></mj-column>
       </mj-section>
     </mj-wrapper>
   </mj-body>
