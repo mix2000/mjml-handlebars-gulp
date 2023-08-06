@@ -343,7 +343,7 @@
           <mj-text
             color="#E7E7E5"
             font-size="16px">
-            г. Москва, Одинцово, ул. Маковского д. 7, строение 7
+            г.&nbsp;Москва,&nbsp;Одинцово,&nbsp;ул.&nbsp;Маковского&nbsp;д.&nbsp;7,&nbsp;строение&nbsp;7
           </mj-text>
           <mj-spacer height="10px" />
           <mj-text
@@ -361,7 +361,7 @@
             color="#E7E7E5"
             font-size="16px">
             <span style="color: #e7e7e5 !important">
-              г. Санкт-Петербург пр. Пискаревский д. 171 к 1
+              г.&nbsp;Санкт-Петербург&nbsp;пр.&nbsp;Пискаревский&nbsp;д.&nbsp;171&nbsp;к&nbsp;1
             </span>
           </mj-text>
           <mj-spacer height="10px" />
@@ -381,7 +381,9 @@
             color="#E7E7E5"
             font-size="16px"
             padding="5px 0">
-            order@alpha-bt.com
+            <a style=" color:#E7E7E5;font-size:16px;padding:5px 0" href="https://alpha-bt.com/mail?utm_source=sendsay&utm_medium=email&utm_campaign=neff&utm_content=Request_classic&link=mailto:order@alpha-bt.com">
+                 order@alpha-bt.com
+            </a>
           </mj-text>
         </mj-column>
         <mj-column
