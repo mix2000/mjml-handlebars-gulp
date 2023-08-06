@@ -123,7 +123,8 @@
     <!-- Catalog -->
     <mj-wrapper
       background-color="#F7F7F7"
-      padding="0 0 10%">
+      padding="0 0 10%"
+      border-radius="4px">
       <mj-section
         background-color="#FFF"
         border-radius="4px"
@@ -139,7 +140,9 @@
             Каталог
           </mj-text>
         </mj-column>
-        <mj-column width="50%">
+        <mj-column
+          width="50%"
+          css-class="responsive-col280px">
           <mj-image
             padding="10px"
             src="{{mainURL}}/static/mail-2/Images/catalog-item1.png"></mj-image>
@@ -150,7 +153,9 @@
             padding="10px"
             src="{{mainURL}}/static/mail-2/Images/catalog-item3.png"></mj-image>
         </mj-column>
-        <mj-column width="50%">
+        <mj-column
+          width="50%"
+          css-class="responsive-col280px">
           <mj-image
             padding="10px"
             src="{{mainURL}}/static/mail-2/Images/catalog-item4.png"></mj-image>
@@ -183,13 +188,17 @@
         </mj-column>
       </mj-section>
       <mj-section padding-right="40px">
-        <mj-column width="50%">
+        <mj-column
+          width="50%"
+          css-class="responsive-col260px">
           <mj-image
             padding="15px 0"
             src="{{mainURL}}/static/mail-2/Images/about-us1.png"
             fluid-on-mobile="true" />
         </mj-column>
-        <mj-column width="50%">
+        <mj-column
+          width="50%"
+          css-class="responsive-col260px">
           <mj-image
             padding="15px 0"
             src="{{mainURL}}/static/mail-2/Images/about-us2.png"
@@ -197,13 +206,17 @@
         </mj-column>
       </mj-section>
       <mj-section padding-right="40px">
-        <mj-column width="50%">
+        <mj-column
+          width="50%"
+          css-class="responsive-col260px">
           <mj-image
             padding="15px 0"
             src="{{mainURL}}/static/mail-2/Images/about-us3.png"
             fluid-on-mobile="true" />
         </mj-column>
-        <mj-column width="50%">
+        <mj-column
+          width="50%"
+          css-class="responsive-col260px">
           <mj-image
             padding="15px 0"
             src="{{mainURL}}/static/mail-2/Images/about-us4.png"
@@ -211,13 +224,17 @@
         </mj-column>
       </mj-section>
       <mj-section>
-        <mj-column width="50%">
+        <mj-column
+          width="50%"
+          css-class="responsive-col280px">
           <mj-image
             padding="15px 0"
             src="{{mainURL}}/static/mail-2/Images/about-us5.png"
             fluid-on-mobile="true" />
         </mj-column>
-        <mj-column width="50%">
+        <mj-column
+          width="50%"
+          css-class="responsive-col280px">
           <mj-image
             src="{{mainURL}}/static/mail-2/Images/about-us-logo.png"
             align="right" />
@@ -343,7 +360,9 @@
           <mj-text
             color="#E7E7E5"
             font-size="16px">
-            г. Санкт-Петербург пр. Пискаревский д. 171 к 1
+            <span style="color: #e7e7e5 !important">
+              г. Санкт-Петербург пр. Пискаревский д. 171 к 1
+            </span>
           </mj-text>
           <mj-spacer height="10px" />
           <mj-text
