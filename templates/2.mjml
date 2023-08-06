@@ -369,7 +369,9 @@
             color="#E7E7E5"
             font-size="16px"
             text-decoration="underline">
+            <a href="tel:+7(812)312-77-32" style=" color:#E7E7E5;font-size:16px;padding:5px 0">
             +7 (812) 312 77 32
+            </a>
           </mj-text>
         </mj-column>
       </mj-section>
