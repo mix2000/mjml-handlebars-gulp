@@ -60,7 +60,11 @@
             src="{{mainURL}}/static/mail-2/Images/phone.png"
             href=""
             padding-right="10px">
-            8 (800) 350 85 18
+            <a
+              href="tel:+7(800)350-85-18"
+              style="color: #6c6c6a; text-decoration: none">
+              8 (800) 350 85 18
+            </a>
           </mj-social-element>
           <mj-social-element
             src="{{mainURL}}/static/mail-2/Images/telegram.png"
@@ -75,12 +79,11 @@
     </mj-section>
 
     <!-- Hero -->
-    <mj-hero
-      mode="fluid-height"
-      background-width="600px"
-      background-height="453px"
-      background-url="{{mainURL}}/static/mail-2/Images/hero.png"
-      background-color="#F7F7F7" />
+    <mj-section>
+      <mj-column>
+        <mj-image src="{{mainURL}}/static/mail-2/Images/hero.png" />
+      </mj-column>
+    </mj-section>
     <mj-section padding="40px 6%">
       <mj-column>
         <mj-text
@@ -350,7 +353,11 @@
             color="#E7E7E5"
             font-size="16px"
             text-decoration="underline">
-            +7 (495) 299 77 12
+            <a
+              href="tel:+7(495)299-77-12"
+              style="color: #e7e7e5">
+              +7 (495) 299 77 12
+            </a>
           </mj-text>
         </mj-column>
         <mj-column width="20%"></mj-column>
@@ -369,8 +376,10 @@
             color="#E7E7E5"
             font-size="16px"
             text-decoration="underline">
-            <a href="tel:+7(812)312-77-32" style=" color:#E7E7E5;font-size:16px;padding:5px 0">
-            +7 (812) 312 77 32
+            <a
+              href="tel:+7(812)312-77-32"
+              style="color: #e7e7e5">
+              +7 (812) 312 77 32
             </a>
           </mj-text>
         </mj-column>
@@ -383,8 +392,10 @@
             color="#E7E7E5"
             font-size="16px"
             padding="5px 0">
-            <a style=" color:#E7E7E5;font-size:16px;padding:5px 0" href="https://alpha-bt.com/mail?utm_source=sendsay&utm_medium=email&utm_campaign=neff&utm_content=Request_classic&link=mailto:order@alpha-bt.com">
-                 order@alpha-bt.com
+            <a
+              style="color: #e7e7e5; text-decoration: none"
+              href="https://alpha-bt.com/mail?utm_source=sendsay&utm_medium=email&utm_campaign=neff&utm_content=Request_classic&link=mailto:order@alpha-bt.com">
+              order@alpha-bt.com
             </a>
           </mj-text>
         </mj-column>
@@ -410,7 +421,11 @@
               href=""
               padding-right="10px"
               color="#E7E7E5">
-              8 (800) 350 85 18
+              <a
+                href="tel:+7(800)350-85-18"
+                style="color: #e7e7e5; text-decoration: none">
+                8 (800) 350 85 18
+              </a>
             </mj-social-element>
           </mj-social>
         </mj-column>
